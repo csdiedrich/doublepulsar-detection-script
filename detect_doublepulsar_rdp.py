@@ -34,7 +34,7 @@ num_threads = int(args.threads)
 semaphore = threading.BoundedSemaphore(value=num_threads)
 print_lock = threading.Lock()
 
-
+#Print message to user
 def print_status(ip, message):
     global print_lock
 
